@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+
+# Ham ve işlenmiş veriler yeniden indirilebilir / üretilebilir; depoya konmaz
+data/football_data/
+data/transfermarkt/
+data/processed/
+data/reports/
+
+# Haftalık güncellemenin çalışma dosyaları
+logs/
+models/staging/
+models/arsiv/
+.guncelleme.lock

@@ -1,0 +1,5 @@
+started,status,live_n,live_log_loss,live_gap_to_market,retrain,warnings
+2026-09-21 02:32,HATA,175,0.9894069863332375,0.025643123896326836,yapılmadı,Tahmin tablosu üretilemedi (takım eşleştirmesi / Elo); ayrıntı aşağıda.
+2026-09-21 02:34,TAMAMLANDI (uyarılarla),175,0.9894069863332375,0.025643123896326836,yapılmadı,"Elo'su olmayan (son 400 günde maçı olmayan) takımlar tabloya yazılmadı, simülasyon bunlar için kendi formülünü kullanır: ['ucl:Sabah']"
+2026-09-21 02:35,TAMAMLANDI (uyarılarla),175,0.9894069863332375,0.025643123896326836,YENİ MODEL DEVREDE (önceki model arşivde: models/arsiv/2026-09-21_0247),"Elo'su olmayan (son 400 günde maçı olmayan) takımlar tabloya yazılmadı, simülasyon bunlar için kendi formülünü kullanır: ['ucl:Sabah']"
+2026-09-21 10:00,TAMAMLANDI (uyarılarla),0,,,yapılmadı,"Elo'su olmayan (son 400 günde maçı olmayan) takımlar tabloya yazılmadı, simülasyon bunlar için kendi formülünü kullanır: ['ucl:Sabah']"

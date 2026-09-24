@@ -1,0 +1,21 @@
+# Takım adı eşleştirme düzeltmeleri: bir kaynaktaki ad -> kanonik anahtar.
+#   alias   : football-data'daki ya da tahmin sırasında kullanılacak ad
+#   target  : "tm:<Transfermarkt kulüp id>" (önerilen) veya Transfermarkt'taki birebir kulüp adı
+#   country : (opsiyonel) yalnızca bu ülkenin football-data adına uygula (aynı ad farklı ülkelerde olabilir)
+# Otomatik eşleştirme raporu: data/reports/team_identity.csv — 'unresolved', 'conflict_lost',
+# 'name_prefix', 'name_substring' satırlarını gözden geçirip gerekirse buraya ekleyin.
+# Aşağıdakiler, Transfermarkt'ta UEFA maçı olan ama football-data'da farklı adla geçen kulüpler
+# (games.csv.gz'deki kulüp adı ve sezonlarıyla doğrulandı).
+alias,target,country
+Rovaniemi,tm:3776,FIN
+TPS,tm:2275,FIN
+VPS,tm:1102,FIN
+KuPS,tm:6251,FIN
+Bohemians,tm:9211,IRL
+UC Dublin,tm:6069,IRL
+U Craiova,tm:40812,ROU
+Viitorul Constanta,tm:29831,ROU
+Gornik Z.,tm:428,POL
+Ruch,tm:318,POL
+Ruch Chorzow,tm:318,POL
+Stabaek,tm:1274,NOR

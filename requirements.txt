@@ -1,0 +1,13 @@
+# Versiyonlar bilerek sabitlendi: mac_modeli.pkl joblib/pickle ile kaydedildiği için
+# yüklendiği ortamda xgboost ve scikit-learn versiyonları eğitimdekiyle aynı olmalı.
+# Eğitimde kullanılan tam versiyonlar feature_schema.md'ye de yazılır.
+pandas==3.0.5
+numpy==2.5.3
+scikit-learn==1.9.1
+xgboost==3.4.1
+joblib==1.6.0
+requests==2.34.2
+scipy==1.18.1
+
+# soccerdata bilerek eklenmedi: ClubElo için aynı api.clubelo.com endpoint'lerini
+# sarmalıyor ve seleniumbase gibi ağır bağımlılıklar getiriyor; biz CSV'yi doğrudan çekiyoruz.

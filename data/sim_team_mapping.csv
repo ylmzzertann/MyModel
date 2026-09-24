@@ -1,0 +1,109 @@
+competition,sim_name,sim_country,key,model_name,model_country,method
+ucl,Paris,FRA,tm:583,Paris Saint-Germain,FRA,manual_verified
+ucl,Bayern München,GER,tm:27,Bayern Munich,GER,auto_fuzzy
+ucl,Real Madrid,ESP,tm:418,Real Madrid,ESP,auto_exact
+ucl,Liverpool,ENG,tm:31,Liverpool FC,ENG,auto_exact
+ucl,Inter,ITA,tm:46,Inter Milan,ITA,auto_exact
+ucl,Man City,ENG,tm:281,Manchester City,ENG,auto_exact
+ucl,Arsenal,ENG,tm:11,Arsenal FC,ENG,auto_exact
+ucl,Barcelona,ESP,tm:131,FC Barcelona,ESP,auto_exact
+ucl,Atleti,ESP,tm:13,Atlético de Madrid,ESP,manual_verified
+ucl,B. Dortmund,GER,tm:16,Borussia Dortmund,GER,manual_verified
+ucl,Roma,ITA,tm:12,Associazione Sportiva Roma,ITA,auto_exact
+ucl,Sporting CP,POR,tm:336,Sporting CP,POR,auto_exact
+ucl,Aston Villa,ENG,tm:405,Aston Villa,ENG,auto_exact
+ucl,Porto,POR,tm:720,FC Porto,POR,auto_exact
+ucl,Man Utd,ENG,tm:985,Manchester United,ENG,auto_normalized
+ucl,Club Brugge,BEL,tm:2282,Club Brugge KV,BEL,auto_exact
+ucl,Real Betis,ESP,tm:150,Real Betis Balompié,ESP,auto_prefix
+ucl,PSV,NED,tm:383,PSV Eindhoven,NED,auto_prefix
+ucl,Feyenoord,NED,tm:234,Feyenoord Rotterdam,NED,auto_exact
+ucl,Lille,FRA,tm:1082,LOSC Lille,FRA,auto_exact
+ucl,Bodø/Glimt,NOR,tm:501,Fotballklubben Bodø/Glimt,NOR,auto_normalized
+ucl,Napoli,ITA,tm:6195,SSC Napoli,ITA,auto_exact
+ucl,Leipzig,GER,tm:23826,RB Leipzig,GER,auto_substring
+ucl,Villarreal,ESP,tm:1050,Villarreal CF,ESP,auto_exact
+ucl,Fenerbahçe,TUR,tm:36,Fenerbahce,TUR,auto_normalized
+ucl,Shakhtar,UKR,tm:660,FC Shakhtar Donetsk,UKR,auto_prefix
+ucl,Galatasaray,TUR,tm:141,Galatasaray,TUR,auto_exact
+ucl,Slavia Praha,CZE,tm:62,SK Slavia Prague,CZE,manual_verified
+ucl,S. Bratislava,SVK,tm:540,Slovan Bratislava,,manual_verified
+ucl,Stuttgart,GER,tm:79,VfB Stuttgart,GER,auto_exact
+ucl,AEK Athens,GRE,tm:2441,Athlitiki Enosi Konstantinoupoleos,GRE,manual_verified
+ucl,LASK,AUT,tm:413,LASK,AUT,auto_exact
+ucl,Como,ITA,tm:1047,Como 1907,ITA,auto_exact
+ucl,Lens,FRA,tm:826,RC Lens,FRA,auto_exact
+ucl,Viking,NOR,tm:239,Viking Fotballklubb,NOR,auto_exact
+ucl,Sabah,AZE,tm:63993,Sabah FK,,auto_normalized
+uel,Roma,ITA,tm:12,Associazione Sportiva Roma,ITA,auto_exact
+uel,Porto,POR,tm:720,FC Porto,POR,auto_exact
+uel,Rangers,SCO,tm:124,Rangers FC,SCO,auto_exact
+uel,Feyenoord,NED,tm:234,Feyenoord Rotterdam,NED,auto_exact
+uel,Lille,FRA,tm:1082,LOSC Lille,FRA,auto_exact
+uel,GNK Dinamo,CRO,tm:419,GNK Dinamo Zagreb,CRO,auto_prefix
+uel,Real Betis,ESP,tm:150,Real Betis Balompié,ESP,auto_prefix
+uel,Salzburg,AUT,tm:409,Fußballclub Red Bull Salzburg,AUT,auto_exact
+uel,Aston Villa,ENG,tm:405,Aston Villa,ENG,auto_exact
+uel,Fenerbahçe,TUR,tm:36,Fenerbahce,TUR,auto_normalized
+uel,Braga,POR,tm:1075,SC Braga,POR,auto_normalized
+uel,Crvena zvezda,SRB,tm:159,Red Star Belgrade,SRB,manual_verified
+uel,Lyon,FRA,tm:1041,Olympique Lyon,FRA,auto_exact
+uel,PAOK,GRE,tm:1091,Panthessalonikios Athlitikos Omilos Konstantinoupoliton,GRE,auto_exact
+uel,Viktoria Plzeň,CZE,tm:941,FC Viktoria Plzen,CZE,auto_normalized
+uel,Ferencvâros,HUN,tm:279,Ferencvárosi TC,,auto_prefix
+uel,Celtic,SCO,tm:371,Celtic FC,SCO,auto_exact
+uel,M.Tel-Aviv,ISR,tm:119,Maccabi Tel Aviv,,manual_verified
+uel,Young Boys,SUI,tm:452,BSC Young Boys,SUI,auto_exact
+uel,Basel,SUI,tm:26,FC Basel 1893,SUI,auto_exact
+uel,Midtjylland,DEN,tm:865,FC Midtjylland,DEN,auto_exact
+uel,Freiburg,GER,tm:60,SC Freiburg,GER,auto_exact
+uel,Ludogorets,BUL,tm:31614,Ludogorets Razgrad,,auto_prefix
+uel,Nottingham Forest,ENG,tm:703,Nottingham Forest,ENG,auto_exact
+uel,Sturm Graz,AUT,tm:122,Sportklub Puntigamer Sturm Graz,AUT,auto_exact
+uel,FCSB,ROU,tm:301,FCSB,ROU,auto_exact
+uel,Nice,FRA,tm:417,OGC Nice,FRA,auto_exact
+uel,Bologna,ITA,tm:1025,Bologna Football Club 1909,ITA,auto_exact
+uel,Celta Vigo,ESP,tm:940,Celta de Vigo,ESP,auto_fuzzy
+uel,Stuttgart,GER,tm:79,VfB Stuttgart,GER,auto_exact
+uel,Panathinaikos,GRE,tm:265,Panathinaikos Athlitikos Omilos,GRE,auto_exact
+uel,Malmö FF,SWE,tm:496,Malmö Fotbollförening,SWE,auto_normalized
+uel,Go Ahead Eagle,NED,tm:1435,Go Ahead Eagles,NED,auto_prefix
+uel,Utrecht,NED,tm:200,FC Utrecht,NED,auto_exact
+uel,Genk,BEL,tm:1184,KRC Genk,BEL,auto_exact
+uel,Brann,NOR,tm:1100,Sportsklubben Brann,NOR,auto_exact
+uecl,Fiorentina,ITA,tm:430,ACF Fiorentina,ITA,auto_exact
+uecl,AZ Alkmaar,NED,tm:1090,AZ Alkmaar,NED,auto_exact
+uecl,Shakhtar Donetsk,UKR,tm:660,FC Shakhtar Donetsk,UKR,auto_normalized
+uecl,S.Bratislava,SVK,tm:540,Slovan Bratislava,,manual_verified
+uecl,Rapid Wien,AUT,tm:170,Rapid Vienna,AUT,manual_verified
+uecl,Legia Varşova,POL,tm:255,Legia Warszawa,POL,manual_verified
+uecl,Sparta Prag,CZE,tm:197,AC Sparta Prague,CZE,auto_country_prefix
+uecl,Dinamo Kiev,UKR,tm:338,Dynamo Kyiv,UKR,manual_verified
+uecl,Crystal Palace,ENG,tm:873,Crystal Palace,ENG,auto_exact
+uecl,Lech Poznan,POL,tm:238,Lech Poznan,POL,auto_exact
+uecl,Rayo Vallecano,ESP,tm:367,Rayo Vallecano,ESP,auto_exact
+uecl,Shamrock Rovers,IRL,tm:3258,Shamrock Rovers,IRL,auto_exact
+uecl,Omonoia,CYP,tm:829,Omonia Nicosia,,manual_verified
+uecl,Mainz,GER,tm:39,1.FSV Mainz 05,GER,auto_exact
+uecl,Strasbourg,FRA,tm:667,RC Strasbourg Alsace,FRA,auto_exact
+uecl,Jagiellonia,POL,tm:2300,Jagiellonia Bialystok,POL,auto_exact
+uecl,Celje,SLO,tm:710,NK Celje,,auto_normalized
+uecl,Rijeka,CRO,tm:144,HNK Rijeka,CRO,auto_substring
+uecl,Zrinjski,BIH,tm:6808,HSK Zrinjski Mostar,,auto_substring
+uecl,Lincoln Red Imps,GIB,tm:38204,Lincoln Red Imps FC,,auto_normalized
+uecl,KuPS Kuopio,FIN,tm:6251,Kuopion Palloseura,FIN,manual_verified
+uecl,AEK Athens,GRE,tm:2441,Athlitiki Enosi Konstantinoupoleos,GRE,manual_verified
+uecl,Aberdeen,SCO,tm:370,Aberdeen FC,SCO,auto_exact
+uecl,Drita,KOS,tm:33741,FC Drita,,auto_normalized
+uecl,Breidablik,ISL,tm:3737,Breidablik Kópavogur,,auto_prefix
+uecl,Sigma Olomouc,CZE,tm:2311,"SK Sigma Olomouc, a.s.",CZE,auto_prefix
+uecl,Samsunspor,TUR,tm:152,Samsunspor,TUR,auto_exact
+uecl,Raków,POL,tm:9644,Raków Częstochowa,POL,auto_normalized
+uecl,AEK Larnaca,CYP,tm:2156,AEK Larnaca,,auto_exact
+uecl,Shkëndija,MKD,tm:1167,Shkendija Tetovo,,auto_prefix
+uecl,Häcken,SWE,tm:1109,BK Häcken,SWE,auto_normalized
+uecl,Lausanne-Sport,SUI,tm:527,Football Club Lausanne-Sport,SUI,auto_substring
+uecl,U.Craiova,ROU,tm:40812,Universitatea Craiova,ROU,auto_normalized
+uecl,Hamrun Spartans,MLT,tm:17149,Hamrun Spartans,,auto_exact
+uecl,Noah,ARM,tm:60368,FC Noah Yerevan,,auto_prefix
+uecl,Shelbourne,IRL,tm:3909,Shelbourne FC,IRL,auto_exact

@@ -1,0 +1,271 @@
+{
+  "elo_params": {
+    "k": 10.0,
+    "uefa_k_mult": 3.0,
+    "mkt_k": 10.0,
+    "mkt_w": 0.5
+  },
+  "chosen_groups": [
+    "base",
+    "lines",
+    "shots",
+    "form",
+    "market"
+  ],
+  "component_params": {
+    "xgb": {
+      "learning_rate": 0.03,
+      "max_depth": 5,
+      "min_child_weight": 100,
+      "colsample_bytree": 0.8,
+      "reg_lambda": 2.0,
+      "half_life": 4.0,
+      "n_estimators": 232
+    },
+    "logreg": {
+      "C": 1.0,
+      "half_life": 4.0
+    },
+    "poisson": {
+      "learning_rate": 0.03,
+      "max_depth": 4,
+      "min_child_weight": 50,
+      "colsample_bytree": 0.8,
+      "reg_lambda": 2.0,
+      "half_life": 4.0,
+      "n_estimators": 328
+    }
+  },
+  "ensemble": {
+    "weights": {
+      "xgb": 0.45,
+      "logreg": 0.25,
+      "poisson": 0.3
+    },
+    "rho": -0.030443580996439037,
+    "temperature": 0.9192906859117506,
+    "max_goals": 10
+  },
+  "cv_objective": {
+    "objective": 0.9589294556987706,
+    "log_loss": 0.981700387465929,
+    "uefa_log_loss": 0.9361585239316123
+  },
+  "test_metrics": {
+    "tum_maclar": {
+      "naive_class_frequencies": {
+        "n": 8519,
+        "accuracy": 0.4371405094494659,
+        "log_loss": 1.0722033152790518,
+        "brier": 0.6487411236005713
+      },
+      "xgb": {
+        "n": 8519,
+        "accuracy": 0.5134405446648668,
+        "log_loss": 0.995865523815155,
+        "brier": 0.5943483746095571
+      },
+      "logreg": {
+        "n": 8519,
+        "accuracy": 0.5107406972649372,
+        "log_loss": 0.997802770841014,
+        "brier": 0.5956150070965427
+      },
+      "poisson": {
+        "n": 8519,
+        "accuracy": 0.5147317760300505,
+        "log_loss": 0.9959620931910064,
+        "brier": 0.594349057640957
+      },
+      "ensemble": {
+        "n": 8519,
+        "accuracy": 0.5157882380561098,
+        "log_loss": 0.9963313564594527,
+        "brier": 0.5947214879071171
+      },
+      "market_odds_reference": {
+        "n": 6700,
+        "accuracy": 0.5204477611940298,
+        "log_loss": 0.983365451524011,
+        "brier": 0.5860658059318972
+      },
+      "ensemble_on_market_subset": {
+        "n": 6700,
+        "accuracy": 0.5086567164179104,
+        "log_loss": 1.0020593739571548,
+        "brier": 0.5989552694601158
+      }
+    },
+    "ic_lig": {
+      "naive_class_frequencies": {
+        "n": 7592,
+        "accuracy": 0.4311116965226554,
+        "log_loss": 1.0760380159015117,
+        "brier": 0.6512831865113866
+      },
+      "xgb": {
+        "n": 7592,
+        "accuracy": 0.5069810326659642,
+        "log_loss": 1.0010440349578857,
+        "brier": 0.5981568491045032
+      },
+      "logreg": {
+        "n": 7592,
+        "accuracy": 0.5042149631190727,
+        "log_loss": 1.0035206201204252,
+        "brier": 0.5996671430687924
+      },
+      "poisson": {
+        "n": 7592,
+        "accuracy": 0.5084299262381454,
+        "log_loss": 1.001208724446626,
+        "brier": 0.5982118020990222
+      },
+      "ensemble": {
+        "n": 7592,
+        "accuracy": 0.5088250790305585,
+        "log_loss": 1.0019225828150022,
+        "brier": 0.5987861812678058
+      },
+      "market_odds_reference": {
+        "n": 6700,
+        "accuracy": 0.5204477611940298,
+        "log_loss": 0.983365451524011,
+        "brier": 0.5860658059318972
+      },
+      "ensemble_on_market_subset": {
+        "n": 6700,
+        "accuracy": 0.5086567164179104,
+        "log_loss": 1.0020593739571548,
+        "brier": 0.5989552694601158
+      }
+    },
+    "uefa_tumu": {
+      "naive_class_frequencies": {
+        "n": 927,
+        "accuracy": 0.48651564185544766,
+        "log_loss": 1.0407976549492621,
+        "brier": 0.6279219848530968
+      },
+      "xgb": {
+        "n": 927,
+        "accuracy": 0.5663430420711975,
+        "log_loss": 0.9534545540809631,
+        "brier": 0.5631575025862227
+      },
+      "logreg": {
+        "n": 927,
+        "accuracy": 0.564185544768069,
+        "log_loss": 0.9509743870985226,
+        "brier": 0.5624285817445255
+      },
+      "poisson": {
+        "n": 927,
+        "accuracy": 0.5663430420711975,
+        "log_loss": 0.9529929189810149,
+        "brier": 0.562713722230352
+      },
+      "ensemble": {
+        "n": 927,
+        "accuracy": 0.5728155339805825,
+        "log_loss": 0.950539996706128,
+        "brier": 0.5614322193048001
+      }
+    },
+    "uefa_ana_turnuva": {
+      "naive_class_frequencies": {
+        "n": 528,
+        "accuracy": 0.5,
+        "log_loss": 1.033971026437458,
+        "brier": 0.6232062283398805
+      },
+      "xgb": {
+        "n": 528,
+        "accuracy": 0.5795454545454546,
+        "log_loss": 0.9398200511932373,
+        "brier": 0.5532628836994167
+      },
+      "logreg": {
+        "n": 528,
+        "accuracy": 0.5833333333333334,
+        "log_loss": 0.9362007302015795,
+        "brier": 0.5516753238223375
+      },
+      "poisson": {
+        "n": 528,
+        "accuracy": 0.5814393939393939,
+        "log_loss": 0.93904892911392,
+        "brier": 0.553059049030107
+      },
+      "ensemble": {
+        "n": 528,
+        "accuracy": 0.5890151515151515,
+        "log_loss": 0.9349273109569873,
+        "brier": 0.5502137275800774
+      }
+    },
+    "uefa_eleme_turu": {
+      "naive_class_frequencies": {
+        "n": 132,
+        "accuracy": 0.4621212121212121,
+        "log_loss": 1.0417605122452596,
+        "brier": 0.6301427384030537
+      },
+      "xgb": {
+        "n": 132,
+        "accuracy": 0.5378787878787878,
+        "log_loss": 1.0015836954116821,
+        "brier": 0.5950421333811873
+      },
+      "logreg": {
+        "n": 132,
+        "accuracy": 0.5151515151515151,
+        "log_loss": 1.0015879406202772,
+        "brier": 0.598789976118516
+      },
+      "poisson": {
+        "n": 132,
+        "accuracy": 0.553030303030303,
+        "log_loss": 0.9981800216537423,
+        "brier": 0.5953823485366292
+      },
+      "ensemble": {
+        "n": 132,
+        "accuracy": 0.5378787878787878,
+        "log_loss": 0.9994448239145381,
+        "brier": 0.5948347668769681
+      }
+    }
+  },
+  "ece": {
+    "tum_maclar": {
+      "away_win": 0.013672866792061615,
+      "draw": 0.013565718749228456,
+      "home_win": 0.019956789511652234,
+      "top_label": 0.023186076126714816
+    },
+    "uefa_tumu": {
+      "away_win": 0.04068991131468037,
+      "draw": 0.02022415674858111,
+      "home_win": 0.033074141703154515,
+      "top_label": 0.021171476509711764
+    }
+  },
+  "data_range": {
+    "development": {
+      "from": "2014-07-01",
+      "to": "2025-06-30",
+      "n": 73281,
+      "n_uefa": 7736
+    },
+    "test": {
+      "from": "2025-07-01",
+      "to": "2026-09-17",
+      "n": 8519,
+      "n_uefa": 927
+    }
+  },
+  "trained_at": "2026-09-21 06:47:02",
+  "data_end": "2026-09-17",
+  "fitted_on": "geliştirme + test (--refit-all; test metrikleri bir önceki fit'e ait)"
+}
