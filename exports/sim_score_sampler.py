@@ -7,8 +7,8 @@ böylece simülasyon projesine yeni bağımlılık eklemeden kopyalanabilir.
     entry = get_entry(table, "ucl", "Galatasaray", "Bayern München", "league")
     home_goals, away_goals = sample_score(entry, table["meta"]["rho"])
 
-Matris formülü futbol-ml-modeli/src/predict.py içindeki dixon_coles_matrix + consistent_score_matrix ile
-birebir aynıdır (tests: futbol-ml-modeli README'deki doğrulama). Değiştirmeyin.
+Matris formülü src/predict.py içindeki dixon_coles_matrix + consistent_score_matrix ile
+birebir aynıdır (tests: README'deki doğrulama). Değiştirmeyin.
 """
 
 from __future__ import annotations
