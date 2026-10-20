@@ -4,7 +4,7 @@
 > `models/mac_modeli.pkl` ile birlikte taşınmalıdır. `predict.py`, en alttaki JSON bloğunu
 > okuyup modelin beklediği özelliklerle ve topluluk parametreleriyle birebir karşılaştırır.
 
-- **Eğitim zamanı (UTC):** 2026-09-21 06:47:02
+- **Eğitim zamanı (UTC):** 2026-10-19 14:10:05
 - **Sözleşme hash'i:** `0589222bbcf9097f483ac2d818772ff33373ce8c81e9ef3949df6684bff524cd`
 - **Model girdisi:** tek satırlık `pandas.DataFrame`, kolonlar aşağıdaki sırada, hepsi `float64`
 - **Model çıktısı:** `[home_win, draw, away_win]` olasılıkları + (opsiyonel) skor matrisi
@@ -33,14 +33,14 @@ skor dağılımı (opsiyonel): M'nin ev/beraberlik/deplasman bölgeleri p_final'
 
 - football-data.co.uk: 21 Avrupa 1. ligi + 6 adet 2. lig (maç sonuçları, kapanış oranları, şutlar)
 - Transfermarkt veri seti (dcaribou/transfermarkt-datasets, CC0): UEFA CL/EL/UECL + ön eleme turları, UKR/CRO/CZE/SRB ligleri, oyuncu maç kadroları, piyasa değerleri, oyuncu mevkileri
-- Kaynakların son maç tarihleri: {'football-data': '2026-09-17', 'transfermarkt': '2026-05-24'}
+- Kaynakların son maç tarihleri: {'football-data': '2026-10-14', 'transfermarkt': '2026-05-24'}
 - Elo ısınma dönemi: 2008-07-01 - 2014-07-01
 - Eğitim satırları: 1. lig + UEFA maçları (2. lig maçları yalnızca geçmiş özellikleri besler)
 
 | Bölüm | Başlangıç | Bitiş | Maç sayısı | UEFA maçı |
 |---|---|---|---|---|
 | development | 2014-07-01 | 2025-06-30 | 73281 | 7736 |
-| test | 2025-07-01 | 2026-09-17 | 8519 | 927 |
+| test | 2025-07-01 | 2026-10-12 | 8841 | 927 |
 
 Çapraz doğrulama sezonları: ['2021-07-01 - 2022-07-01', '2022-07-01 - 2023-07-01', '2023-07-01 - 2024-07-01', '2024-07-01 - 2025-07-01']. Kaydedilen model şu veriyle eğitildi: **geliştirme + test (--refit-all; test metrikleri bir önceki fit'e ait)**.
 
@@ -363,20 +363,20 @@ Izgara araması yalnızca 2021-07-01 öncesi maçlarla yapıldı (Elo beklenen s
 
 | Alt küme | Model | n | Accuracy | Log-loss | Brier |
 |---|---|---|---|---|---|
-| tum_maclar | naive_class_frequencies | 8519 | 0.4371 | 1.0722 | 0.6487 |
-| tum_maclar | xgb | 8519 | 0.5134 | 0.9959 | 0.5943 |
-| tum_maclar | logreg | 8519 | 0.5107 | 0.9978 | 0.5956 |
-| tum_maclar | poisson | 8519 | 0.5147 | 0.9960 | 0.5943 |
-| tum_maclar | ensemble | 8519 | 0.5158 | 0.9963 | 0.5947 |
-| tum_maclar | market_odds_reference | 6700 | 0.5204 | 0.9834 | 0.5861 |
-| tum_maclar | ensemble_on_market_subset | 6700 | 0.5087 | 1.0021 | 0.5990 |
-| ic_lig | naive_class_frequencies | 7592 | 0.4311 | 1.0760 | 0.6513 |
-| ic_lig | xgb | 7592 | 0.5070 | 1.0010 | 0.5982 |
-| ic_lig | logreg | 7592 | 0.5042 | 1.0035 | 0.5997 |
-| ic_lig | poisson | 7592 | 0.5084 | 1.0012 | 0.5982 |
-| ic_lig | ensemble | 7592 | 0.5088 | 1.0019 | 0.5988 |
-| ic_lig | market_odds_reference | 6700 | 0.5204 | 0.9834 | 0.5861 |
-| ic_lig | ensemble_on_market_subset | 6700 | 0.5087 | 1.0021 | 0.5990 |
+| tum_maclar | naive_class_frequencies | 8841 | 0.4386 | 1.0713 | 0.6481 |
+| tum_maclar | xgb | 8841 | 0.5149 | 0.9951 | 0.5938 |
+| tum_maclar | logreg | 8841 | 0.5124 | 0.9968 | 0.5950 |
+| tum_maclar | poisson | 8841 | 0.5160 | 0.9950 | 0.5937 |
+| tum_maclar | ensemble | 8841 | 0.5172 | 0.9954 | 0.5941 |
+| tum_maclar | market_odds_reference | 7022 | 0.5228 | 0.9817 | 0.5849 |
+| tum_maclar | ensemble_on_market_subset | 7022 | 0.5108 | 1.0006 | 0.5980 |
+| ic_lig | naive_class_frequencies | 7914 | 0.4330 | 1.0749 | 0.6505 |
+| ic_lig | xgb | 7914 | 0.5088 | 1.0000 | 0.5974 |
+| ic_lig | logreg | 7914 | 0.5063 | 1.0022 | 0.5988 |
+| ic_lig | poisson | 7914 | 0.5101 | 0.9999 | 0.5974 |
+| ic_lig | ensemble | 7914 | 0.5107 | 1.0006 | 0.5979 |
+| ic_lig | market_odds_reference | 7022 | 0.5228 | 0.9817 | 0.5849 |
+| ic_lig | ensemble_on_market_subset | 7022 | 0.5108 | 1.0006 | 0.5980 |
 | uefa_tumu | naive_class_frequencies | 927 | 0.4865 | 1.0408 | 0.6279 |
 | uefa_tumu | xgb | 927 | 0.5663 | 0.9535 | 0.5632 |
 | uefa_tumu | logreg | 927 | 0.5642 | 0.9510 | 0.5624 |
@@ -397,7 +397,7 @@ Izgara araması yalnızca 2021-07-01 öncesi maçlarla yapıldı (Elo beklenen s
 
 Kalibrasyon (ensemble, test; ECE = beklenen kalibrasyon hatası, 0 ideal):
 
-- tum_maclar: away_win=0.0137, draw=0.0136, home_win=0.0200, top_label=0.0232
+- tum_maclar: away_win=0.0133, draw=0.0117, home_win=0.0187, top_label=0.0224
 - uefa_tumu: away_win=0.0407, draw=0.0202, home_win=0.0331, top_label=0.0212
 
 ## Kütüphane versiyonları
@@ -784,7 +784,7 @@ Kalibrasyon (ensemble, test; ECE = beklenen kalibrasyon hatası, 0 ideal):
       "reason": "'continuity' grubu CV ileri seçiminde modele eklenmedi"
     }
   ],
-  "trained_at": "2026-09-21 06:47:02",
+  "trained_at": "2026-10-19 14:10:05",
   "data_range": {
     "development": {
       "from": "2014-07-01",
@@ -794,13 +794,13 @@ Kalibrasyon (ensemble, test; ECE = beklenen kalibrasyon hatası, 0 ideal):
     },
     "test": {
       "from": "2025-07-01",
-      "to": "2026-09-17",
-      "n": 8519,
+      "to": "2026-10-12",
+      "n": 8841,
       "n_uefa": 927
     }
   },
   "fitted_on": "geliştirme + test (--refit-all; test metrikleri bir önceki fit'e ait)",
-  "data_end": "2026-09-17",
+  "data_end": "2026-10-12",
   "library_versions": {
     "python": "3.13.5",
     "xgboost": "3.4.1",
